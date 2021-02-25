@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+BinaryPattern=chrome;
+MimeType=
+Name=Idae
+Exec=/opt/google/chrome/chrome --no-sandbox https://www.jetbrains.com/idea/
+Icon=/opt/google/chrome/product_logo_32.png
+Type=Application
+Terminal=0
