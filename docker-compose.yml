@@ -10,6 +10,8 @@ services:
       context: ./
       dockerfile: Dockerfile
     image: lianshufeng/scf_vnc
+    volumes:
+     - ./scf_demo:/headless/Desktop/scf_demo
     ports:
       - "5901:5901"
       - "6901:6901"
@@ -17,6 +19,7 @@ services:
     container_name: scf_vnc
     restart: always
     environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/bin:/opt:/usr/local/cloudfunction/lang/bin:/usr/local/cloudfunction/lang/python3/bin:/usr/local/cloudfunction/lang/php7/bin:/usr/local/cloudfunction/lang/php5/bin:/usr/local/cloudfunction/lang/node12/bin:/usr/local/cloudfunction/lang/node10/bin:/usr/local/cloudfunction/lang/node8/bin:/usr/local/cloudfunction/lang/node6/bin:/usr/local/cloudfunction/lang/java8/bin:/usr/local/cloudfunction/lang/go1/bin
       - VNC_PW=vncpassword
       # - DEBUG=true
     

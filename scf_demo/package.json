@@ -1,0 +1,16 @@
+{
+  "name": "scf_demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sync-request": "6.1.0",
+    "cheerio": "1.0.0-rc.5",
+    "encoding": "0.1.13"
+  },
+  "scripts": {
+    "debug": "node -e 'console.log(require(\"./index.js\").main_handler({\"key1\":\"test value 1\",\"key2\":\"test value 2\"}))'"
+  },
+  "author": "",
+  "license": "ISC"
+}
