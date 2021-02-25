@@ -7,19 +7,19 @@ version: "3"
 
 services:
 
-  centos_vnc:
+  scf_vnc:
     build:
       # args:
         # http_proxy: http://192.168.0.37:707
         # https_proxy: http://192.168.0.37:707
       context: ./
       dockerfile: Dockerfile
-    image: lianshufeng/centos_vnc
+    image: lianshufeng/scf_vnc
     ports:
       - "5901:5901"
       - "6901:6901"
     privileged: true
-    container_name: centos_vnc
+    container_name: scf_vnc
     restart: always
     environment:
       - VNC_PW=vncpassword
