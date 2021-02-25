@@ -1,8 +1,13 @@
 # docker_scf_vnc
-基于腾讯云函数基础镜像，构建的开发环境 vnc+chrome+idea(下载路径)
+基于腾讯云函数基础镜像，构建的开发环境 vnc+chrome+idea(下载路径) 
+
+- 作用
+````shell
+以腾讯云函数公开的云函数运行的生产环境为基础，使用云函数进行在线编写与调试，保证环境一致性。内置云函数的一个demo:在线抓取百度的热榜
+````
 
 
-- image
+- 图片
 ![image](https://github.com/lianshufeng/docker_scf_vnc/blob/master/images/webstorm.png?raw=true)
 
 - docker-compose.yml
